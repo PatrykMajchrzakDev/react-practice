@@ -36,7 +36,7 @@ const Form = ({ formSubmitionHandler }) => {
     setError(null);
   };
   return (
-    <div>
+    <>
       {error && (
         <ErrorModal
           title={error.title}
@@ -67,7 +67,7 @@ const Form = ({ formSubmitionHandler }) => {
           </button>
         </form>
       </div>
-    </div>
+    </>
   );
 };
 

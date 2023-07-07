@@ -10,10 +10,10 @@ function App() {
     });
   };
   return (
-    <div>
+    <>
       <Form formSubmitionHandler={onFormSumbition} />
       {usersList.length > 0 && <UsersList users={usersList} />}
-    </div>
+    </>
   );
 }
 
