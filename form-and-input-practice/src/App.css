@@ -13,6 +13,15 @@ input {
   color: black;
 }
 
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+  background-color: #ccc;
+  color: black;
+  border: #ccc;
+  cursor: not-allowed;
+}
+
 .app {
   color: black;
   width: 90%;
