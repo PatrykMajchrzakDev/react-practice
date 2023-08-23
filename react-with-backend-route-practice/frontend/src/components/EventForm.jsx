@@ -1,17 +1,11 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useNavigate } from "react-router-dom";
-
+import { Form } from "react-router-dom";
 import classes from "./EventForm.module.css";
 
 function EventForm({ method, event }) {
-  const navigate = useNavigate();
-  function cancelHandler() {
-    navigate("..");
-  }
-
   return (
-    <form className={classes.form}>
+    <Form method="post" className={classes.form}>
       <p>
         <label htmlFor="title">Title</label>
         <input
@@ -53,12 +47,10 @@ function EventForm({ method, event }) {
         />
       </p>
       <div className={classes.actions}>
-        <button type="button" onClick={cancelHandler}>
-          Cancel
-        </button>
+        <button type="button">Cancel</button>
         <button>Save</button>
       </div>
-    </form>
+    </Form>
   );
 }
 
